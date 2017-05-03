@@ -24,13 +24,13 @@ class CreateTenantsTable extends Migration
         });
 
         Tenant::create([
-            'domains' => ['multi.dev', 'www.multi.com'],
+            'domains' => ['super-simple-multi-tenant-laravel.dev', 'www.super-simple-multi-tenant-laravel.com'],
             'name' => 'Root Domain',
             'slug' => 'root'
         ]);
 
         Tenant::create([
-            'domains' => ['alt.mult.idev'],
+            'domains' => ['alt.super-simple-multi-tenant-laravel.dev'],
             'name' => 'Alternative Domain',
             'slug' => 'alt'
         ]);
